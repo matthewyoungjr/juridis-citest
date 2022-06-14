@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <title>JURIDIS-CI</title>
+    <meta charset="utf-8" />
+    <!--[if IE]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <![endif]-->
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/main.css" id="color-switcher-link" />
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  </head>
+
+  <body>
+    <div class="preloader">
+      <div class="preloader_image"></div>
+    </div>
+
+    <div id="canvas">
+      <div id="box_wrapper">
+        <!-- template sections -->
+
+        <header
+          class="page_header header_darkgrey table_section table_section_md toggler_right"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <a href="./" class="logo small">
+                  <img src="images/logo.png" alt="" />
+                  <span class="logo_text">
+                    <span class="playfair title">JURIDIS-CI</span>
+                  </span>
+                </a>
+                <!-- header toggler -->
+                <span class="toggle_menu">
+                  <span></span>
+                </span>
+              </div>
+              <div class="col-md-8 text-right">
+                <!-- main nav start -->
+                <nav class="mainmenu_wrapper">
+                  <ul class="mainmenu nav sf-menu">
+                    <li class="">
+                      <a href="index.html">Accueil</a>
+                    </li>
+
+                    <li>
+                      <!-- about -->
+                      <a href="about.html">À propos</a>
+                      <ul>
+                        <li>
+                          <a href="team.html">Juristes</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- eof about -->
+
+                    <li>
+                      <a href="services.html">Services</a>
+                    </li>
+                    <!-- contacts -->
+                    <li>
+                      <a href="contact.html">Contact</a>
+                    </li>
+                    <!-- eof contacts -->
+                  </ul>
+                </nav>
+                <!-- eof main nav -->
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section
+          class="page_breadcrumbs cs parallax section_padding_top_40 section_padding_bottom_40"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <h2>Contact</h2>
+                <ol class="breadcrumb">
+                  <li>
+                    <a href="./">Accueil</a>
+                  </li>
+                  <li class="active">Contact</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="map-container"></div>
+
+        <section
+          class="ls columns_padding_25 section_padding_top_100 section_padding_bottom_100"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 to_animate" data-animation="scaleAppear">
+                <h3 class="module-header">Formulaire de contact</h3>
+
+                <form class="contact-form" method="post" action="./">
+                  <div class="row columns_margin_bottom_30">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="first-name" class="sr-only"
+                          >Prénom
+                          <span class="required">*</span>
+                        </label>
+                        <input
+                          type="text"
+                          aria-required="true"
+                          size="30"
+                          value=""
+                          name="first-name"
+                          id="first-name"
+                          class="form-control"
+                          placeholder="Prénom"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="last-name" class="sr-only"
+                          >Nom
+                          <span class="required">*</span>
+                        </label>
+                        <input
+                          type="text"
+                          aria-required="true"
+                          size="30"
+                          value=""
+                          name="last-name"
+                          id="last-name"
+                          class="form-control"
+                          placeholder="Nom"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="email" class="sr-only"
+                          >Votre adresse e-mail</label
+                        >
+                        <input
+                          type="text"
+                          size="30"
+                          value=""
+                          name="email"
+                          id="email"
+                          class="form-control"
+                          placeholder="Votre adresse e-mail"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="phone" class="sr-only"
+                          >Numéro de téléphone
+                          <span class="required">*</span>
+                        </label>
+                        <input
+                          type="text"
+                          aria-required="true"
+                          size="30"
+                          value=""
+                          name="phone"
+                          id="phone"
+                          class="form-control"
+                          placeholder="Numéro de téléphone"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="form-group select-group">
+                        <label for="phone" class="sr-only"
+                          >Domaine de pratique
+                          <span class="required">*</span>
+                        </label>
+                        <div class="input-group">
+                          <select
+                            aria-required="true"
+                            id="month"
+                            name="mounth"
+                            class="choice empty form-control"
+                          >
+                            <option value="" disabled selected data-default>
+                              Domaine de pratique
+                            </option>
+                            <option value="Affacturage">Affacturage</option>
+                            <option value="Bien Immobilier">
+                              Bien Immobilier
+                            </option>
+                            <option value="Intermédiation">
+                              Intermédiation
+                            </option>
+                          </select>
+                          <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label for="comment" class="sr-only"
+                          >Votre message</label
+                        >
+                        <textarea
+                          rows="1"
+                          cols="45"
+                          name="comment"
+                          id="comment"
+                          class="form-control"
+                          placeholder="Votre message"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="form-submit">
+                    <button
+                      type="submit"
+                      id="submit"
+                      name="submit"
+                      class="theme_button color1"
+                    >
+                      Envoyer la demande
+                    </button>
+                  </p>
+                </form>
+              </div>
+
+              <div class="col-md-4 to_animate" data-animation="scaleAppear">
+                <div class="with_border with_padding_small">
+                  <ul class="list1 no-bullets no-top-border no-bottom-border">
+                    <li>
+                      <div class="media">
+                        <div class="media-left">
+                          <i class="rt-icon2-shop highlight fontsize_18"></i>
+                        </div>
+                        <div class="media-body">
+                          <h5 class="media-heading grey">Adresse:</h5>
+                          Angré Djibi, Villa 225 terminus du bus 205, pas loin
+                          de la pharmacie des arcades - Angré 8è tranche Cocody
+                          Abidjan - Côte d’Ivoire.
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="media">
+                        <div class="media-left">
+                          <i class="rt-icon2-phone5 highlight fontsize_18"></i>
+                        </div>
+                        <div class="media-body">
+                          <h5 class="media-heading grey">Téléphone :</h5>
+                          (+225) 05 74 32 50 39 <br />
+                          (+225) 07 07 82 55 58 <br />(+225) 01 43 43 82 70
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="media">
+                        <div class="media-left">
+                          <i class="rt-icon2-stack4 highlight fontsize_18"></i>
+                        </div>
+                        <div class="media-body">
+                          <h5 class="media-heading grey">Fixe :</h5>
+                          (+225) 27 22 59 61 33
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="media">
+                        <div class="media-left">
+                          <i class="rt-icon2-mail highlight fontsize_18"></i>
+                        </div>
+                        <div class="media-body">
+                          <h5 class="media-heading grey">Courriel :</h5>
+                          contact@juridis-ci.com <br />
+                          cv@juridis-ci.com
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="page_footer ds ms bg_image section_padding_50">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-6 to_animate">
+                <div class="widget_text">
+                  <h3 class="widget-title">Pourquoi nous choisir ?</h3>
+                  <p>
+                    Consetetur sadipscing elitr, sed dinonumy eirmod tempor ut
+                    labore edolore magna aliquyam erat, sed diam voluptua. At
+                    vero eos et accusam et justo duo dolores et ea rebum stet
+                    clita kasd gubergren.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-sm-6 to_animate">
+                <div class="widget widget_recent_entries">
+                  <h3 class="widget-title">Dernier article</h3>
+                  <ul>
+                    <li>
+                      <p class="post-date">
+                        <a href="blog-single-right.html">02.01.2022</a>
+                      </p>
+                      <p>Lorem ipsum dolor simet</p>
+                    </li>
+                    <li>
+                      <p class="post-date">
+                        <a href="blog-single-right.html">04.01.2022 </a>
+                      </p>
+                      <p>Consetetur spselitrsed diam</p>
+                    </li>
+                    <li>
+                      <p class="post-date">
+                        <a href="blog-single-right.html">07.01.2022 </a>
+                      </p>
+                      <p>Nonumy eirmod tempor</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-sm-6 to_animate">
+                <div class="widget_text">
+                  <h3 class="widget-title">Contactez nous</h3>
+                  <p>Abidjan, Côte d'Ivoire</p>
+                  <ul class="list1 no-bullets">
+                    <li>
+                      <i class="rt-icon2-device-phone highlight"></i> +225 00 00
+                      00 00
+                    </li>
+                    <li>
+                      <i class="rt-icon2-globe-outline highlight"></i>
+                      <a href="./">www.juridis-ci.com</a>
+                    </li>
+                    <li>
+                      <i class="rt-icon2-mail2 highlight"></i>
+                      <a href="mailto:contact@juridis-ci.com"
+                        >contact@juridis-ci.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-sm-6 to_animate">
+                <div class="widget_text">
+                  <h3 class="widget-title">Restez connecté</h3>
+                  <div class="media">
+                    <div class="media-left media-middle">
+                      <a
+                        href="#"
+                        class="social-icon color-icon border-icon rounded-icon soc-facebook"
+                      ></a>
+                    </div>
+                    <div class="media-body media-middle">Facebook</div>
+                  </div>
+                  <div class="media">
+                    <div class="media-left media-middle">
+                      <a
+                        href="#"
+                        class="social-icon color-icon border-icon rounded-icon soc-twitter"
+                      ></a>
+                    </div>
+                    <div class="media-body media-middle">Twitter</div>
+                  </div>
+                  <div class="media">
+                    <div class="media-left media-middle">
+                      <a
+                        href="#"
+                        class="social-icon color-icon border-icon rounded-icon soc-linkedin"
+                      ></a>
+                    </div>
+                    <div class="media-body media-middle">LinkedIn</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <section class="cs page_copyright table_section section_padding_15">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <p>&copy; 2022 JURIDIS-CI Tous Droits Réservés</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- eof #box_wrapper -->
+    </div>
+    <!-- eof #canvas -->
+
+    <script src="js/compressed.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Map Script -->
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTwYSMRGuTsmfl2z_zZDStYqMlKtrybxo"
+    ></script>
+  </body>
+</html>
